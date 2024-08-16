@@ -20,6 +20,7 @@ body{
     font-family: "IBM Plex Sans Condensed", sans-serif;
     color: var(--veryDarkGrey);
     font-size: 16px;
+    background-color: var(--white);
 }
 
 /* ---------------Header section */

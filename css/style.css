@@ -35,6 +35,7 @@ body{
     max-width: 100%;
     width: 200px;
     padding-left: 15px;
+    margin-bottom: 20px;
 }
 .nav-item a{
     color: var(--grey);
@@ -106,7 +107,6 @@ body{
         justify-content: space-between;
         align-items: center;
         text-align: center;
-        margin: 20px;
     }
     .footer__logo-container{
         padding-left: 60px;

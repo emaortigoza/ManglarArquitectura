@@ -4,7 +4,7 @@
 
 :root{
     --white: #FFFFFF;
-    --greyLight: #cfcfcf56;
+    --greyLight: #cfcfcf;
     --grey: #616161;
     --veryDarkGrey: #333333;
     --black: #000000;
@@ -25,6 +25,7 @@ body{
 
 /* ---------------Header section */
 .header__nav{
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,25 +34,53 @@ body{
 }
 .header__logo{
     max-width: 100%;
-    width: 200px;
-    padding-left: 15px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin: auto;
+    text-align: center;
+}
+.header__logo img{
+    max-width: 100%;
+    width: 220px;
+}
+
+.nav-item{
+    margin-right: 5px;
 }
 .nav-item a{
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
     color: var(--grey);
     text-decoration: none;
+    margin-left: 10px;
 }
 .nav-item a:hover{
-    color: var(--black);
+    color: var(--greyLight);
 }
 
 .navbar-toggler{
+    margin-top: 15px;
     border: none;
 }
 
+/*--------------- Container-hero---*/
+
 .container__hero{
-    margin: 20px 0 0 0;
+    margin-top: 20px ;
     max-width: 100%;
+    container-name: contairner__hero;
+    container-type: inline-size;
+}
+
+.carousel-item{
+    
+}
+.carousel-item img{
+    margin: auto;
+    max-width: 100%;
+    width: 1300px;
+    max-height: 100%;
+    
 }
 
 /*-------- container ends*/
@@ -96,7 +125,7 @@ body{
     padding: 12px;
 }
 .footer__nav-list a:hover{
-    color: var(--black);
+    color: var(--greyLight);
 }
 
 /*---------- footer media queries*/
@@ -109,9 +138,9 @@ body{
         text-align: center;
     }
     .footer__logo-container{
-        padding-left: 60px;
+        padding-left: 70px;
     }
     .footer__nav{
-        padding-right: 80px;
+        padding-right: 90px;
     }
 }

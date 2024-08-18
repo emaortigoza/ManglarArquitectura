@@ -4,7 +4,7 @@
 
 :root{
     --white: #FFFFFF;
-    --greyLight: #cfcfcf;
+    --greyLight: #8f8f8f;
     --grey: #616161;
     --veryDarkGrey: #333333;
     --black: #000000;
@@ -24,6 +24,9 @@ body{
 }
 
 /* ---------------Header section */
+.header{
+    margin-bottom: 10px;
+}
 .header__nav{
     
     display: flex;
@@ -79,7 +82,7 @@ body{
 .carousel-item img{
     margin: auto;
     max-width: 100%;
-    width: 1300px;
+    width: 100vw;
     max-height: 100%;
     
 }
@@ -109,6 +112,99 @@ body{
 
 /*--------------- seccion arquitectura mediaqueris*/
 
+
+/*------------ seccion nosotros*/
+.nosotros__hero{
+    container-name: nosotros;
+    container-type: inline-size;
+}
+.nosotros__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1400px;
+}
+.profile__data-container{
+    max-width: 600px;
+    width: 400px;
+    height: auto;
+    margin-top: 10px;
+   
+}
+
+.profile__img-container{
+    max-height: 500px;
+    overflow: hidden;
+    
+}
+.nosotros__img{
+    max-width: 100%;
+    width: 350px;
+}
+
+.profile__description{
+    margin: 10px;
+    padding: 20px;
+}
+.profile__description h1{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--grey);
+    word-spacing: 2;
+    line-height: 1.5;
+}
+.profile__data-members{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.profile__data-members .profile__member{
+    margin-top: 20px;
+    list-style: none;
+    padding: 2px;
+}
+.profile__member h3{
+    color: var(--grey);
+    font-size: 16px;
+    font-weight: 700;
+    word-spacing: 2;
+    margin-bottom: 0;
+}
+.profile__member p{
+    padding: 0;
+    margin: 0;
+    color: var(--greyLight);
+}
+
+/*------------- section nosotros queries*/
+@container nosotros (min-width:720px){
+    .nosotros__wrapper{
+        flex-direction: row;
+        padding: 20px;
+    }
+    .profile__img-container{
+        margin-right: 20px;
+    }
+    .nosotros__img{
+        width: 320px;
+    }
+    .profile__data-container{
+        width: 500px;
+        margin: 0;
+        padding: 0;
+    }
+    .profile__description h1{
+        width: 400px;
+    }
+    
+    
+}
+
+
+
 /*---------- footer*/
 .footer{
     container-name: footer;
@@ -119,7 +215,7 @@ body{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: 30px;
+    padding: 10px;
 }
 .footer__logo{
     text-align: center;
@@ -163,9 +259,9 @@ body{
         text-align: center;
     }
     .footer__logo-container{
-        padding-left: 70px;
+        padding-left: 45px;
     }
     .footer__nav{
-        padding-right: 90px;
+        padding-right: 55px;
     }
 }

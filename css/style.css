@@ -123,6 +123,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: auto;
     max-width: 1400px;
 }
 .profile__data-container{

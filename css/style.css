@@ -243,7 +243,7 @@ body{
     color: var(--grey);
     width: 50px;
     height: 50px;
-    font-size: 28px;
+    font-size: 20px;
     padding: 12px;
 }
 .footer__nav-list a:hover{

@@ -244,8 +244,18 @@ body{
     border-bottom: 0.5px solid rgb(172, 172, 172);
     color: var(--greyLight);   
     font-family: "IBM Plex Sans Condensed", sans-serif;
+    outline: none;
 }
 
+.formulario button{
+    background-color: white;
+    max-width: 100%;
+    width: 60px;
+    height: 30px;
+    margin: auto;
+    border: 1px solid var(--greyLight);
+    border-radius: 2px;
+}
 
 /*------------- contacto queries*/
 
@@ -260,12 +270,12 @@ body{
 
     textarea{
         min-width: 100%;
-        width: 600px;
+        width: 550px;
         resize: vertical;
         min-height: 100px;
         max-height: 200px;
     }
-
+    
 }
 
 

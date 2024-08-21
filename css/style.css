@@ -204,6 +204,69 @@ body{
     
 }
 
+/*------- seccion nosotros ends*/
+
+/*------- seccion contacto*/
+.formulario{
+    color: var(--grey);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    container-name: formulario;
+    container-type: inline-size ;
+}
+
+.formulario h2{
+    font-size: 1.5em;
+    font-weight: 250;
+    padding: 20px 0;
+}
+
+.formulario__contacto-container{
+    max-width: 800px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 12px;
+
+}
+.input__container{
+    display: grid;
+    place-content: center;
+    padding: 6px 20px;
+}
+.input__container input, textarea{
+    width: 100%;
+    padding: 6px 12px;
+    margin: 20px auto;
+    border: none;
+    border-bottom: 0.5px solid rgb(172, 172, 172);
+    color: var(--greyLight);   
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+}
+
+
+/*------------- contacto queries*/
+
+@container formulario (min-width: 600px){
+    .formulario__contacto-container{
+        grid-template-columns: repeat(auto-fill, minmax(350px,1fr)) ;
+    }
+    
+    .input__container:last-child{
+        grid-column: span 2 ;
+    }
+
+    textarea{
+        min-width: 100%;
+        width: 600px;
+        resize: vertical;
+        min-height: 100px;
+        max-height: 200px;
+    }
+
+}
 
 
 /*---------- footer*/
@@ -213,27 +276,27 @@ body{
 }
 .footer__conatiner{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
-    padding: 10px;
+    margin: auto;
+    margin-top: 40px;
+    padding: 20px;
+   
 }
 .footer__logo{
-    text-align: center;
-    align-items: center;
+    text-align: start;
+    align-items: start;
     max-width: 100%;
-    width: 70px;
-    margin: 10px 0 10px 0;    
+    width: 60px;
 }
-.footer__logo-container{
-    margin: 20px;
-}
+
 .footer__nav{
     text-align: center;
 }
 
 .footer__nav-list{
-    width: 200px;
     display: inline-flex;
     justify-content: space-between;
 }
@@ -241,10 +304,10 @@ body{
 .footer__nav-list a{
     text-decoration: none;
     color: var(--grey);
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     font-size: 20px;
-    padding: 12px;
+    padding: 5px;
 }
 .footer__nav-list a:hover{
     color: var(--greyLight);
@@ -258,11 +321,14 @@ body{
         justify-content: space-between;
         align-items: center;
         text-align: center;
+        padding: 20px;
+        margin: 0 40px;
+        margin-top: 20px;
     }
     .footer__logo-container{
-        padding-left: 45px;
+        padding-left: 10px;
     }
     .footer__nav{
-        padding-right: 55px;
+        padding-right: 10px;
     }
 }

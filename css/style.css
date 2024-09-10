@@ -112,6 +112,93 @@ body{
 
 /*--------------- seccion arquitectura mediaqueris*/
 
+/*---------------- arquitectura detail*/
+.arqDetail__img{
+    max-width: 1200px;
+    margin: auto;
+}
+.arqDetail__img img{
+    margin: auto;
+    padding: 20px;
+    max-width: 100%;
+    width: 100vw;
+    max-height: 100%;
+}
+.arqDetail__encabezado{
+    margin: auto;
+    padding: 20px;
+    max-width: 1300px;
+    width: 100vw;
+    max-height: 100%;
+}
+
+.arqDetail__encabezado .encabezado{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+.arqDetail__encabezado .encabezado h3{
+    font-size: 1.4rem;
+}
+.arqDetail__encabezado .encabezado h5{
+    font-size: 1rem;
+    color: var(--greyLight);
+    padding-bottom: 20px;
+}
+.arqDetail__encabezado .encabezado p{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--greyLight);
+    word-spacing: 2;
+    line-height: 1.5;
+}
+
+.accordion{
+    max-width: 1000px;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid #c9c8c8;
+}
+
+.accordion-body p{
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--greyLight);
+    word-spacing: 2;
+    line-height: 1.5;
+}
+.accordion-body h5{
+    font-size: 16px;
+    color: var(--grey);
+}
+.arqDetail__detalles{
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.arqDetail__detalles .detalles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #c9c8c8;
+    margin-bottom: 5px;
+}
+
+.detalles h6{
+    font-size: 16px;
+    color: var(--grey);
+
+}
+.detalles p{
+    font-size: 14px;
+    padding: 5px;
+    color: var(--greyLight);
+}
+
 
 /*------------ seccion nosotros*/
 .nosotros__hero{

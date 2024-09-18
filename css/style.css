@@ -14,6 +14,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body{
@@ -60,6 +61,7 @@ body{
 .nav-item a:hover{
     color: var(--greyLight);
 }
+
 
 .dropdown-item:hover{
     background-color: var(--white);
@@ -129,151 +131,104 @@ body{
     width: 100vw;
     max-height: 100%;
 }
-.arqDetail__encabezado{
+.arqDetail__data-container{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    max-width: 1200px;
+    justify-content: center;
     margin: auto;
-}
-.arqDetail__encabezado .arqDetail__info{
-    max-width: 100%;
-    width: 100vw;
-}
-.arqDetail__info h3{
-    font-size: 1.5rem;
-    font-weight: 400;
-    word-spacing: 2px;
-    line-height: 1.5;
-    color: var(--veryDarkGrey);
-}
-.arqDetail__info h5{
-    font: size 1.1rem;
-    font-weight: 300;
-    word-spacing: 2px;
-    line-height: 1.5;
-    color: var(--grey);
-}
-.arqDetail__info p{
-    width: 100%;
-    font-size: 16px;
-    font-weight: 400;
-    color: var(--grey);
-    word-spacing: 2px;
-    line-height: 1.5;
-}
-.accordion{
-    border-bottom: 1px solid #bebebe;
-    width: 400px;
-}
-.accordion .accordion-button{
-    font-size: 1.1rem;
-    color: var(--veryDarkGrey);
-}
-.accordion-body p{
-    width: 100%;
-    font-size: 14px;
-    font-weight: 400;
-    color: var(--grey);
-    word-spacing: 2px;
-    line-height: 1.5;
-}
-.accordion-body h5{
-    font-size: 1.1rem;
-    color: var(--veryDarkGrey);
-}
-.arqDetail__detalles{
-    margin-top: 20px;
-    display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
+    color: var(--grey);
+    max-width: 1200px;
 }
-.arqDetail__detalles .detalles{
+.arqDetail__data{
+    max-width: 550px;
+}
+.data__description h2{
+    font-size: 30px;
+}
+.data__description h2 span{
+    font-size: 20px;
+}
+.data__description h4{
+    font-size: 20px;
+}
+.data__description{
+    font-size: 16px;
+}
+.data__info-container ul{
+    margin: 0;
+    padding: 0;
+}
+.data__info{
+    list-style: none;
     padding: 5px;
-    border-bottom: 1px solid #bebebe;
-    width: 400px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    border-bottom: 1px solid #bbbbbb;
 }
-.arqDetail__encabezado .arqDetail__boceto img{
-    max-width: 100%;
-    width: 400px;
-    max-height: 100%;
+.data__info summary{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--grey);
+}
+.data__info details li{
+    list-style: none;
+    text-align: start;
+    padding: 6px;
+    font-size: 14px;
+}
+.data__info details h6{
+    font-size: 15px;
+}
+.data__info .info-detail h4{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--grey);
+    
+}
+.data__info .info-detail h4 span{
+    font-size: 14px;
+    color: var(--greyLight);
+    margin-left: 20px;
+}
+.data__info .info-detail .data__info-detail3{
+    margin-left: 60px;
 }
 
-.galeria__container{
-    max-width: 1200px;
-    margin: 0 auto;
+.arqDatail__data-img{
+    
+    max-height: 500px;
+    overflow: hidden;
 }
-.galeriaImg{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.galeria__planos{
-    display: grid;
-    grid-column: 1fr;
-    max-width: 1200px;
+.data__img{
+    max-width: 100%;
+    width: 400px;
     margin: auto;
-    width: 100%;
-    gap: 12px;
-    padding: 12px;
-    min-height: 90vh;
 }
-.planos__img{
-    padding: 20px;
-    border-bottom: 1px solid var(--greyLight);
-}
-.planos__img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.galeria__renders{
-    display: grid;
-    grid-column: 1fr;
-    max-width: 1200px;
-    margin: auto;
-    width: 100%;
-    gap: 12px;
-    padding: 12px;
-    min-height: 90vh;
-}
-.renders__img{
-    padding: 20px;
-    border-bottom: 1px solid var(--greyLight);
-}
-.renders__img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+
+
+
 
 /*------------ arqDetail mediaqueris*/
 @container arqDetail (min-width:720px){
-    .arqDetail__encabezado{
-        display: flex;
-        flex-direction: row;
-        padding-left: 20px;
-    }
-    .arqDetail__encabezado .arqDetail__info{
-        width: 50vw ;
+    .arqDetail__data-container{
+        margin-top: 20px;
         padding: 20px;
-    }
-    .arqDetail__encabezado .arqDetail__boceto {
-        margin: auto;
-    }
-    .galeria__planos, .galeria__renders{
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    }
-    .planos__img:first-child{
-        grid-column: span 2;
+        flex-direction: row ;
+        justify-content: space-around;
     }
 
+    .data__info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        
+    }
+    .data__info span{
+        padding-left: 10px;
+        font-size: 14px;
+        text-align: center;
+    }
     
 }
 
@@ -478,10 +433,11 @@ body{
 
 .footer__nav-list a{
     text-decoration: none;
-    color: var(--grey);
+    color: var(--black);
     width: 30px;
     height: 30px;
     font-size: 20px;
+    font-weight: 500;
     padding: 5px;
 }
 .footer__nav-list a:hover{

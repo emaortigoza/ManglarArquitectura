@@ -49,6 +49,7 @@ body{
 
 .nav-item{
     margin-right: 5px;
+    text-align: center;
 }
 .nav-item a{
     font-size: 14px;
@@ -120,6 +121,7 @@ body{
     container-type: inline-size;
     padding: 20px;
 }
+
 .arqDetail__img{
     max-width: 1200px;
     margin: auto;
@@ -182,6 +184,7 @@ summary::before{
     font-size: 14px;
 }
 .data__info details h6{
+    margin-left: 6px;
     font-size: 15px;
 }
 .data__info .info-detail h4{

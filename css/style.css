@@ -145,12 +145,14 @@ body{
 }
 .data__description h2{
     font-size: 30px;
+    padding-bottom: 5px;
 }
 .data__description h2 span{
     font-size: 20px;
 }
 .data__description h4{
     font-size: 20px;
+    padding-bottom: 5px;
 }
 .data__description{
     font-size: 16px;
@@ -168,6 +170,10 @@ body{
     font-size: 16px;
     font-weight: 500;
     color: var(--grey);
+    list-style: none;
+}
+summary::before{
+    content: "+";
 }
 .data__info details li{
     list-style: none;
@@ -204,7 +210,40 @@ body{
     margin: auto;
 }
 
+.arqDetail__galery-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 40px;
+    width: 100%;
+    gap: 12px;
+    min-height: 90vh;
+    
+}
+.arqDetail__galery-render{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 10px;
+    width: 100%;
+    gap: 12px;
+    min-height: 60vh;
+}
 
+
+.arqDetail__galery-container .galery__img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+}
+
+.arqDetail__galery-render .galery__render img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
 /*------------ arqDetail mediaqueris*/
@@ -229,7 +268,16 @@ body{
         font-size: 14px;
         text-align: center;
     }
+    .arqDetail__galery-container{
+        grid-template-columns: repeat(auto-fill,minmax(400px, 1fr));
+    }
+    .galery__img:first-child{
+        grid-column: span 2;
+    }
     
+    .arqDetail__galery-render{
+        flex-direction: row;
+    }
 }
 
 /*------------ seccion nosotros*/

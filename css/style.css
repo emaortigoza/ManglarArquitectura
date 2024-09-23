@@ -146,17 +146,17 @@ body{
     max-width: 550px;
 }
 .data__description h2{
-    font-size: 30px;
+    font-size: 20px;
     padding-bottom: 5px;
 }
 .data__description h2 span{
-    font-size: 20px;
+    font-size: 18px;
 }
 .data__description h4{
-    font-size: 20px;
+    font-size: 18px;
     padding-bottom: 5px;
 }
-.data__description{
+.data__description p{
     font-size: 16px;
 }
 .data__info-container ul{
@@ -279,6 +279,7 @@ summary::before{
     }
     
     .arqDetail__galery-render{
+
         flex-direction: row;
     }
 }

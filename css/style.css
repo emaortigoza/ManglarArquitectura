@@ -53,7 +53,7 @@ body{
 }
 .nav-item a{
     font-size: 14px;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     font-weight: 600;
     color: var(--grey);
     text-decoration: none;
@@ -146,18 +146,19 @@ body{
     max-width: 550px;
 }
 .data__description h2{
-    font-size: 20px;
-    padding-bottom: 5px;
+    font-size: 24px;
+    color: var(--black);
 }
 .data__description h2 span{
     font-size: 18px;
 }
 .data__description h4{
     font-size: 18px;
-    padding-bottom: 5px;
 }
 .data__description p{
     font-size: 16px;
+    font-weight: 400;
+    color: var(--greyLight);
 }
 .data__info-container ul{
     margin: 0;
@@ -170,7 +171,7 @@ body{
 }
 .data__info summary{
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 300;
     color: var(--grey);
     list-style: none;
 }
@@ -195,6 +196,7 @@ summary::before{
 }
 .data__info .info-detail h4 span{
     font-size: 14px;
+    font-weight: 300;
     color: var(--greyLight);
     margin-left: 20px;
 }
@@ -218,9 +220,9 @@ summary::before{
     grid-template-columns: 1fr;
     max-width: 1200px;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 200px;
     width: 100%;
-    gap: 12px;
+    gap: 20px;
     min-height: 90vh;
     
 }
@@ -253,9 +255,9 @@ summary::before{
 @container arqDetail (min-width:720px){
     .arqDetail__data-container{
         margin-top: 20px;
-        padding: 20px;
+        padding: 0;
         flex-direction: row ;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .data__info{
@@ -274,7 +276,9 @@ summary::before{
     .arqDetail__galery-container{
         grid-template-columns: repeat(auto-fill,minmax(400px, 1fr));
     }
-    .galery__img:first-child{
+    .galery__img:last-child{
+        margin-top: 200px;
+        margin-bottom: 200px;
         grid-column: span 2;
     }
     

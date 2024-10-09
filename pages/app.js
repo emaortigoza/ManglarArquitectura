@@ -29,9 +29,10 @@ const displayProducts = (trabajosToShow) =>{
         const div = document.createElement('div')
         div.innerHTML = `
 
-            
+                
                 <a href = "${trabajo.direccion}">
                     <img src="${trabajo.foto}" alt="${trabajo.name}">
+                    <div class="nameHover">${trabajo.name}</div>
                 </a>
            
             

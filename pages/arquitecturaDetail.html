@@ -99,60 +99,68 @@
           </article>
 
           <div class="arqDetail__galery-container">
+
             <div class="galery__img">
-              <img src="../img/imgArquitectura/detail/1-centro_Cl-03.jpg" alt="">
+              <img src="../img/imgArquitectura/detail/1-centro_Cl-03.jpg" alt="Imagen 1" class="zoomable">
+            </div>
+
+            <div class="galery__img">
+              <img src="../img/imgArquitectura/detail/1-izq_Cl-02.jpg" alt="Imagen 1" class="zoomable">
+            </div>
+
+            <div class="galery__img">
+              <img src="../img/imgArquitectura/detail/2_der_Cl-05.jpg" alt="Imagen 1" class="zoomable">
             </div>
             <div class="galery__img">
-              <img src="../img/imgArquitectura/detail/1-izq_Cl-02.jpg" alt="">
+              <img src="../img/imgArquitectura/detail/2_izq_Cl-04.jpg" alt="Imagen 1" class="zoomable">
             </div>
             <div class="galery__img">
-              <img src="../img/imgArquitectura/detail/2_izq_Cl-04.jpg" alt="">
+              <img src="../img/imgArquitectura/detail/3_der_Cl-09.jpg" alt="Imagen 1" class="zoomable">
             </div>
             <div class="galery__img">
-              <img src="../img/imgArquitectura/detail/2_der_Cl-05.jpg" alt=""> 
+              <img src="../img/imgArquitectura/detail/4_der_Cl-08.jpg" alt="Imagen 1" class="zoomable">
             </div>
             <div class="galery__img">
-              <img src="../img/imgArquitectura/detail/3_der_Cl-09.jpg" alt="">
+              <img src="../img/imgArquitectura/detail/Corte-1-06.jpg" alt="Imagen 1" class="zoomable">
             </div>
             <div class="galery__img">
-              <img src="../img/imgArquitectura/detail/4_der_Cl-08.jpg" alt="">
+              <img src="../img/imgArquitectura/detail/Corte-2-07.jpg" alt="Imagen 1" class="zoomable">
             </div>
+           
+            
             <div class="galery__img">
-              <img src="../img/imgArquitectura/detail/Corte-2-07.jpg" alt="">
-            </div>
-            <div class="galery__img">
-              <img src="../img/imgArquitectura/detail/Corte-1-06.jpg" alt="">
-            </div>
-            <div class="galery__img">
-              <img src="../img/imgArquitectura/detail/AXO-CL-01.jpg" alt="">
+              <img src="../img/imgArquitectura/detail/AXO-CL-01.jpg" alt="Imagen 1" class="zoomable">
             </div>
           </div>
 
           <div class="arqDetail__galery-render">
             <div class="galery__render">
-              <img src="../img/imgArquitectura/detail/RenderInterior01.jpg" alt="">
+              <img src="../img/imgArquitectura/detail/RenderInterior01.jpg" alt="" class="zoomable">
             </div>
             <div class="galery__render">
-              <img src="../img/imgArquitectura/detail/RenderInterior02.jpg" alt="">
+              <img src="../img/imgArquitectura/detail/RenderInterior02.jpg" alt="" class="zoomable">
             </div>
             <div class="galery__render">
-              <img src="../img/imgArquitectura/detail/RenderInterior03.jpg" alt="">
+              <img src="../img/imgArquitectura/detail/RenderInterior03.jpg" alt="" class="zoomable">
             </div>
           </div>
           <div class="arqDetail__galery-render">
             <div class="galery__render">
-              <img src="../img/imgArquitectura/detail/RenderInterior04.jpg" alt="">
+              <img src="../img/imgArquitectura/detail/RenderInterior04.jpg" alt="" class="zoomable">
             </div>
             <div class="galery__render">
-              <img src="../img/imgArquitectura/detail/RenderInterior05.jpg" alt="">
+              <img src="../img/imgArquitectura/detail/RenderInterior05.jpg" alt="" class="zoomable">
             </div>
           </div>
           <div class="arqDetail__galery-render">
             <div class="galery__render">
-              <img src="../img/imgArquitectura/detail/renderfotofinal06.jpg" alt="">
+              <img src="../img/imgArquitectura/detail/renderfotofinal06.jpg" alt="" class="zoomable">
             </div>
           </div>
-           
+
+          <div class="overlay" id="overlay">
+            <img id="zoomed-image" class="zoomed-image">
+          </div> 
         </section>
         
     </main>
@@ -177,8 +185,40 @@
 
 
 
+    <script>
+     const zoomableImages = document.querySelectorAll('.zoomable');  // Seleccionar todas las imágenes
+const overlay = document.getElementById('overlay');
+const zoomedImage = document.getElementById('zoomed-image');
 
+let isZoomed = false;
+
+zoomableImages.forEach(image => {
+  image.addEventListener('click', () => {
+    zoomedImage.src = image.src;  // Cargar la imagen en el overlay
+    overlay.style.display = 'flex';  // Mostrar la superposición
+    isZoomed = false;  // Comenzar en estado no ampliado
+  });
+});
+
+zoomedImage.addEventListener('click', () => {
+  if (isZoomed) {
+    zoomedImage.classList.remove('zoomed');  // Reducir la imagen
+  } else {
+    zoomedImage.classList.add('zoomed');  // Ampliar la imagen
+  }
+  isZoomed = !isZoomed;  // Cambiar el estado
+});
+
+overlay.addEventListener('click', (e) => {
+  if (e.target === overlay) {  // Cerrar si se hace clic fuera de la imagen
+    overlay.style.display = 'none';
+    zoomedImage.classList.remove('zoomed');  // Restablecer el zoom
+  }
+});
+
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/ee1bf82153.js" crossorigin="anonymous"></script>
+
 </body>
 </html>

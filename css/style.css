@@ -268,12 +268,52 @@ summary::before{
     min-height: 50vh;
 }
 
+.arqDetail__galery-container .galery__img{
+    width: auto;
+    height: auto;
+}
 
 .arqDetail__galery-container .galery__img img{
         width: 100%;
         height: 100%;
         object-fit: cover;
 }
+
+.zoomable {
+    width: 300px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .zoomable:hover {
+    transform: scale(1.02);
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+  
+  .zoomed-image {
+    max-width: 90%;
+    max-height: 90%;
+    cursor: zoom-in;  /* El cursor se verá como una lupa */
+    transition: transform 0.3s ease;
+  }
+  
+  .zoomed-image.zoomed {
+    transform: scale(2); /* El zoom se aplicará aquí */
+    cursor: zoom-out;  /* Cambia a "zoom-out" cuando se hace clic */
+  }
+
 
 .arqDetail__galery-render .galery__render img{
     width: 100%;

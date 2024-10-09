@@ -61,3 +61,8 @@ selectAll.addEventListener("click", ()=>{
 })
 
 displayProducts(trabajos)
+
+
+
+/*--------------ZOOM------------------*/ 
+

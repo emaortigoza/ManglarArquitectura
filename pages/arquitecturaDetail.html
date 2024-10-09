@@ -191,6 +191,8 @@ const overlay = document.getElementById('overlay');
 const zoomedImage = document.getElementById('zoomed-image');
 
 let isZoomed = false;
+let lastClickX = 0;
+let lastClickY = 0;
 
 zoomableImages.forEach(image => {
   image.addEventListener('click', () => {
@@ -200,13 +202,24 @@ zoomableImages.forEach(image => {
   });
 });
 
-zoomedImage.addEventListener('click', () => {
+zoomedImage.addEventListener('click', (e) => {
+  const rect = zoomedImage.getBoundingClientRect();  // Obtener dimensiones de la imagen dentro del overlay
+  const clickX = e.clientX - rect.left;  // Coordenada X del clic dentro de la imagen
+  const clickY = e.clientY - rect.top;   // Coordenada Y del clic dentro de la imagen
+
   if (isZoomed) {
-    zoomedImage.classList.remove('zoomed');  // Reducir la imagen
+    // Reducir la imagen y restaurar el origen del zoom al centro
+    zoomedImage.style.transformOrigin = `center`;
+    zoomedImage.classList.remove('zoomed');
   } else {
-    zoomedImage.classList.add('zoomed');  // Ampliar la imagen
+    // Cambiar el origen del zoom al punto clicado
+    const originX = (clickX / rect.width) * 100;  // Porcentaje del clic X relativo al ancho
+    const originY = (clickY / rect.height) * 100; // Porcentaje del clic Y relativo a la altura
+    zoomedImage.style.transformOrigin = `${originX}% ${originY}%`;  // Establecer origen del zoom
+    zoomedImage.classList.add('zoomed');
   }
-  isZoomed = !isZoomed;  // Cambiar el estado
+
+  isZoomed = !isZoomed;  // Alternar el estado de zoom
 });
 
 overlay.addEventListener('click', (e) => {

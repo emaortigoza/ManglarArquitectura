@@ -1,7 +1,7 @@
 let trabajos = [
     {id:'1', categoria: 'proyecto', name:'Casa CH', foto:'../img/imgArquitectura/ejemplo.jpg', direccion: './arquitecturaDetail.html'},
     {id:'2', categoria: 'proyecto', name:'Casa CL – Vivienda unifamiliar', foto:'../img/imgArquitectura/ejemplo2.jpg', direccion: './arquitecturaDetail.html'},
-    {id:'3', categoria: 'proyecto', name:'Ph Olaya – Remodelacion Vivienda unifamiliar', foto:'/img/imgArquitectura/ejemplo3.jpg', direccion: './arquitecturaDetail.html'},
+    {id:'3', categoria: 'proyecto', name:'Ph Olaya – Remodelacion Vivienda unifamiliar', foto:'../img/imgArquitectura/ejemplo3.jpg', direccion: './arquitecturaDetail.html'},
     {id:'4', categoria: 'proyecto', name:'Oficinas VUK', foto:'../img/imgArquitectura/ejemplo4.jpg', direccion: './arquitecturaDetail.html'},
     {id:'5', categoria: 'proyecto', name:'Capilla San Pantaleón – Templo de culto', foto:'../img/imgArquitectura/ejemplo5.jpg', direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'},
     {id:'6', categoria: 'proyecto', name:'SUM Canning', foto:'../img/imgArquitectura/ejemplo6.jpg', direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'},
@@ -9,7 +9,7 @@ let trabajos = [
     {id:'8', categoria: 'proyecto', name:'Ph Pavon – Vivienda unifamiliar', foto:'../img/imgArquitectura/ejemplo9.jpg', direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'},
     {id:'9', categoria: 'consurso', name:'CONCURSO «ZIG ZAG»', foto:'../img/imgArquitectura/ejemplo8.jpg', direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'},
     {id:'10', categoria: 'proyecto', name:'Stand Miller s.a.', foto:'../img/imgArquitectura/ejemplo10.jpg', direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'},
-    {id:'11', categoria: 'concurso', name:'Complejo de encuentros académicos de Fundación José A. Balseiro en S.C', foto:'/img/imgArquitectura/ejemplo11.jpg', direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'},
+    {id:'11', categoria: 'concurso', name:'Complejo de encuentros académicos de Fundación José A. Balseiro en S.C', foto:'../img/imgArquitectura/ejemplo11.jpg', direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'},
     {id:'12', categoria: 'concurso', name:'«Llamador»', foto:'../img/imgArquitectura/ejemplo12.jpg', direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'},
     {id:'13', categoria: 'concurso', name:'«Camara Cereales»', foto:'../img/imgArquitectura/ejemplo13.jpg', direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'},
     {id:'14', categoria: 'concurso', name:'CONCURSO AHRCC', foto:'../img/imgArquitectura/ejemplo14.jpg', direccion: '/ManglarArquitectura/pages/arquitecturaDetail.html'},

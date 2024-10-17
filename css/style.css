@@ -629,8 +629,7 @@ summary::before{
         border: 1px solid var(--greyLight);
         border-radius: 2px;
         padding: 12px;
-        width: 150px;
-        margin-left: 200px;
+        
     }
 
 

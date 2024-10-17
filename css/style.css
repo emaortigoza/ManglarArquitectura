@@ -159,7 +159,7 @@ body{
     }
 
     .gallery__container .figure:hover img{
-        transform: scale(1.3);  /* Zoom al pasar el mouse */
+        transform: scale(1.1);  /* Zoom al pasar el mouse */
     }
 
     .gallery__container .figure .nameHover{
@@ -513,24 +513,29 @@ summary::before{
 
 .gallery__container__filo a{
     position: relative;
+    margin: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
 }
+
 
 .gallery__container__filo img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.4s ease;  /* Suaviza el zoom */
+    transition: all 500ms ease-out;  /* Suaviza el zoom */
 }
 
 .gallery__container__filo a:hover img{
-    transform: scale(1.01);  /* Zoom al pasar el mouse */
+    transform: scale(1.1);  /* Zoom al pasar el mouse */
 }
 
 
 
 
 /*------- seccion contacto*/
-.formulario{
+/* .formulario{
     color: var(--grey);
     display: flex;
     flex-direction: column;
@@ -575,27 +580,96 @@ summary::before{
     margin: auto;
     border: 1px solid var(--greyLight);
     border-radius: 2px;
-}
+} */
+    .form{
+        margin-top: 10px;
+        min-height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        container-name: form;
+        container-type: inline-size;
+    }
+
+    .form__form{
+        padding: 12px;
+        max-width: 600px;
+        display: grid;
+    }
+
+    .form__input-container :is(label, input, textarea){
+        width: 100%;
+        padding:6px;
+        font-size: 16px;
+        font-weight: 300;
+        margin: 4px;
+        border: none;
+    }
+
+    .form__input-container input,  .form__input-container textarea{
+
+        border-bottom: 1px solid var(--greyLight);
+        color: rgb(129, 129, 129);
+    }
+    .form__input-container input,  .form__input-container textarea:focus-visible{
+        outline: none;
+    }
+
+    .form__input-container textarea{
+        resize: none;
+        min-height: 120px;
+        font-family: inherit;
+    }
+    
+
+    .form__input-container input[type="submit"]{
+        background-color: white;
+        color: var(--grey);
+        border: 1px solid var(--greyLight);
+        border-radius: 2px;
+        padding: 12px;
+        width: 150px;
+        margin-left: 200px;
+    }
+
+
 
 /*------------- contacto queries*/
 
-@container formulario (min-width: 600px){
-    .formulario__contacto-container{
-        grid-template-columns: repeat(auto-fill, minmax(350px,1fr)) ;
+@container form (min-width: 600px){
+    .form__form{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "nombreApellido Telefono"
+            "ciudad email"
+            "mensaje mensaje"
+            "submit submit"
+        ;
+        gap: 12px;
     }
-    
-    .input__container:last-child{
-        grid-column: span 2 ;
+    .form__input-container:first-child{
+        grid-area: nombreApellido;
     }
-
-    textarea{
-        min-width: 100%;
-        width: 550px;
-        resize: vertical;
-        min-height: 100px;
-        max-height: 200px;
+    .form__input-container:nth-child(2){
+        grid-area: Telefono;
     }
-    
+    .form__input-container:nth-child(3){
+        grid-area: ciudad;
+    }
+    .form__input-container:nth-child(4){
+        grid-area: email;
+    }
+    .form__input-container:nth-child(5){
+        grid-area: mensaje;
+    }
+    .form__input-container:last-child{
+        grid-area: submit;
+    }
+    .form__input-container input[type="submit"]{
+        width: 150px;
+        margin-left: 210px;
+    }
 }
 
 

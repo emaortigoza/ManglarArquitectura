@@ -235,7 +235,7 @@ body{
     font-size: 18px;
 }
 .data__description p{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     color: var(--greyLight);
 }
@@ -395,6 +395,7 @@ summary::before{
     .arqDetail__galery-container{
         grid-template-columns: repeat(auto-fill,minmax(400px, 1fr));
     }
+    
     .galery__img:last-child{
         margin-top: 200px;
         margin-bottom: 200px;

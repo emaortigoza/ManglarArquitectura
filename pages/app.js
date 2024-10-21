@@ -1,22 +1,129 @@
 let trabajos = [
-    {id:'1', categoria: 'proyecto', name:'Casa CH', foto:'../img/imgArquitectura/ejemplo.jpg', direccion: './arquitecturaDetail.html'},
-    {id:'2', categoria: 'proyecto', name:'Casa CL', foto:'../img/imgArquitectura/ejemplo2.jpg', direccion: './arquitecturaDetail.html'},
-    {id:'3', categoria: 'proyecto', name:'Ph Olaya', foto:'../img/imgArquitectura/ejemplo3.jpg', direccion: './arquitecturaDetail.html'},
-    {id:'4', categoria: 'proyecto', name:'Oficinas VUK', foto:'../img/imgArquitectura/ejemplo4.jpg', direccion: './arquitecturaDetail.html'},
-    {id:'5', categoria: 'proyecto', name:'Capilla San Pantaleón', foto:'../img/imgArquitectura/ejemplo5.jpg', direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'},
-    {id:'6', categoria: 'proyecto', name:'SUM Canning', foto:'../img/imgArquitectura/ejemplo6.jpg', direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'},
-    {id:'7', categoria: 'proyecto', name:'Óptica Hipervisión', foto:'../img/imgArquitectura/ejemplo7.jpg', direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'},
-    {id:'8', categoria: 'proyecto', name:'Ph Pavon', foto:'../img/imgArquitectura/ejemplo9.jpg', direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'},
-    {id:'9', categoria: 'consurso', name:'Zig Zag', foto:'../img/imgArquitectura/ejemplo8.jpg', direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'},
-    {id:'10', categoria: 'proyecto', name:'Stand Miller s.a.', foto:'../img/imgArquitectura/ejemplo10.jpg', direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'},
-    {id:'11', categoria: 'concurso', name:'Complejo de encuentros académicos de Fundación José A. Balseiro en S.C', foto:'../img/imgArquitectura/ejemplo11.jpg', direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'},
-    {id:'12', categoria: 'concurso', name:'Llamador', foto:'../img/imgArquitectura/ejemplo12.jpg', direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'},
-    {id:'13', categoria: 'concurso', name:'Camara Cereales', foto:'../img/imgArquitectura/ejemplo13.jpg', direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'},
-    {id:'14', categoria: 'concurso', name:'AHRCC', foto:'../img/imgArquitectura/ejemplo14.jpg', direccion: '/ManglarArquitectura/pages/arquitecturaDetail.html'},
-    {id:'15', categoria: 'concurso', name:'Ministerio de Desarrollo Humano y Articulación Solidaria', foto:'../img/imgArquitectura/ejemplo15.jpg', direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'},
-    {id:'16', categoria: 'concurso', name:'Casa Cañon', foto:'../img/imgArquitectura/ejemplo17.jpg'},
-    {id:'17', categoria: 'concurso', name:'Complejo Judicial Zapala', foto:'../img/imgArquitectura/ejemplo16.jpg', direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'},
-    {id:'18', categoria: 'concurso', name:'AHRCC', foto:'../img/imgArquitectura/ejemplo18.jpg', direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'},
+    {
+     id:'1',
+     categoria: 'proyecto', 
+     name:'Casa CH', 
+     foto:'../img/imgArquitectura/casa-CH/casa-Ch.jpg',
+     direccion: './arqDetail/casaCh.html'
+    },
+    {
+     id:'2', 
+     categoria: 'proyecto', 
+     name:'Casa CL', 
+     foto:'../img/imgArquitectura/casa-CL/Casa-CL-ok.jpg', 
+     direccion: './arqDetail/casaCl.html'
+    },
+    {
+     id:'3',
+     categoria: 'proyecto',
+     name:'Ph Olaya', 
+     foto:'../img/imgArquitectura/Ph Olaya/PORTADA.jpg', 
+     direccion: './arqDetail/phOlaya.html'
+    },
+    {
+        id:'4', 
+        categoria: 'proyecto', 
+        name:'Oficinas VUK', 
+        foto:'../img/imgArquitectura/Oficinas VUK/PORTADA_VUK.jpg', 
+        direccion: './arqDetail/vuk.html'
+    },
+    {
+    id:'5', 
+    categoria: 'proyecto', 
+    name:'Capilla San Pantaleón', 
+    foto:'../img/imgArquitectura/Capilla San Pantaleón/Capilla_Top.jpg', 
+    direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'
+    },
+    {
+    id:'6', 
+    categoria: 'proyecto', 
+    name:'SUM Canning', 
+    foto:'../img/imgArquitectura/SUM Canning/SUM_Portada.jpg', 
+    direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'
+    },
+    {
+    id:'7',
+    categoria: 'proyecto', 
+    name:'Óptica Hipervisión', 
+    foto:'../img/imgArquitectura/Óptica Hipervisión/OPTICA_Top.jpg', 
+    direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'
+    },
+    {  
+    id:'8', 
+    categoria: 'proyecto', 
+    name:'Ph Pavon', 
+    foto:'../img/imgArquitectura/Ph Pavon/TOP_PH-Pavon.jpg', 
+    direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'
+    },
+    {
+    id:'9', 
+    categoria: 'consurso', 
+    name:'Zig Zag', 
+    foto:'../img/imgArquitectura/CONCURSO «ZIG ZAG»/ZIGZAG_Top.jpg', 
+    direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'
+    },
+    {
+    id:'10', 
+    categoria: 'proyecto', 
+    name:'Stand Miller s.a.', 
+    foto:'../img/imgArquitectura/Stand Miller s.a/EPIBA_Top.jpg', 
+    direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'
+    },
+    {
+    id:'11',
+    categoria: 'concurso', 
+    name:'Complejo de encuentros académicos de Fundación José A. Balseiro en S.C', 
+    foto:'../img/imgArquitectura/CONCURSO Complejo de encuentros académicos de Fundación José A. Balseiro en S.C/PORTADA_Balseiro.jpg', 
+    direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'
+    },
+    {
+    id:'12', 
+    categoria: 'concurso', 
+    name:'Llamador', 
+    foto:'../img/imgArquitectura/CONCURSO «Llamador»/Logrono-Espana-Llamador-GAL.jpg', 
+    direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'
+    },
+    {
+    id:'13', 
+    categoria: 'concurso', 
+    name:'Camara Cereales', 
+    foto:'../img/imgArquitectura/CONCURSO «Camara Cereales»/Cereales-PORTADA.jpg', 
+    direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'
+    },
+    {
+    id:'14', 
+    categoria: 'concurso', 
+    name:'AHRCC', 
+    foto:'../img/imgArquitectura/CONCURSO AHRCC/AHRCC_Top.jpg', 
+    direccion: '/ManglarArquitectura/pages/arquitecturaDetail.html'
+    },
+    {
+    id:'15', 
+    categoria: 'concurso', 
+    name:'Ministerio de Desarrollo Humano y Articulación Solidaria', 
+    foto:'../img/imgArquitectura/Concurso Ministerio Desarrollo Humano/VIEDMA_Top.jpg', 
+    direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'
+    },
+    {
+    id:'16', 
+    categoria: 'concurso', 
+    name:'Casa Cañon', 
+    foto:'../img/imgArquitectura/CONCURSO «Casa Cañon»/PORTADACASACANON.jpg'
+    },
+    {
+    id:'17', 
+    categoria: 'concurso', 
+    name:'Complejo Judicial Zapala', 
+    foto:'../img/imgArquitectura/Concurso – Complejo Judicial Zapala/Portada-Zapala.jpg', 
+    direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'
+    },
+    {
+    id:'18',
+    categoria: 'concurso', 
+    name:'AHRCC-2', 
+    foto:'../img/imgArquitectura/CONCURSO AHRCC-2/SALADILLO_PORTADA.jpg', 
+    direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'
+    },
   
 ]
 

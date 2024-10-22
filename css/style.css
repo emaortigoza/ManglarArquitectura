@@ -75,10 +75,15 @@ body{
 }
 
 /*--------------- Container-hero---*/
-
+.container__heroIndex{
+    margin-top: 20px ;
+    max-width: 100%;
+}
 .container__hero{
     margin-top: 20px ;
     max-width: 100%;
+    width: 1100px;
+    margin: auto;
     container-name: contairner__hero;
     container-type: inline-size;
 }
@@ -395,9 +400,12 @@ summary::before{
     .arqDetail__galery-container{
         grid-template-columns: repeat(auto-fill,minmax(400px, 1fr));
     }
-    
-    .galery__img:last-child{
+    .imgvuk{
         margin-top: 200px;
+        grid-column: span 2 ;
+    }
+    .galery__img:last-child{
+        margin-top: 100px;
         margin-bottom: 200px;
         grid-column: span 2;
     }

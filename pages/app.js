@@ -32,14 +32,14 @@ let trabajos = [
     categoria: 'proyecto', 
     name:'Capilla San Pantaleón', 
     foto:'../img/imgArquitectura/Capilla San Pantaleón/Capilla_Top.jpg', 
-    direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'
+    direccion: './arqDetail/sanPanta.html'
     },
     {
     id:'6', 
     categoria: 'proyecto', 
     name:'SUM Canning', 
     foto:'../img/imgArquitectura/SUM Canning/SUM_Portada.jpg', 
-    direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'
+    direccion: './arqDetail/canning.html'
     },
     {
     id:'7',

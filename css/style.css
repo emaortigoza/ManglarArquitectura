@@ -401,7 +401,7 @@ summary::before{
         grid-template-columns: repeat(auto-fill,minmax(400px, 1fr));
     }
     .imgvuk{
-        margin-top: 200px;
+        margin-top: 50px;
         grid-column: span 2 ;
     }
     .galery__img:last-child{

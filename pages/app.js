@@ -46,21 +46,21 @@ let trabajos = [
     categoria: 'proyecto', 
     name:'Óptica Hipervisión', 
     foto:'../img/imgArquitectura/Óptica Hipervisión/OPTICA_Top.jpg', 
-    direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'
+    direccion: './arqDetail/optica.html'
     },
     {  
     id:'8', 
     categoria: 'proyecto', 
     name:'Ph Pavon', 
     foto:'../img/imgArquitectura/Ph Pavon/TOP_PH-Pavon.jpg', 
-    direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'
+    direccion: './arqDetail/pavon.html'
     },
     {
     id:'9', 
     categoria: 'consurso', 
     name:'Zig Zag', 
     foto:'../img/imgArquitectura/CONCURSO «ZIG ZAG»/ZIGZAG_Top.jpg', 
-    direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'
+    direccion: './arqDetail/zigZag.html'
     },
     {
     id:'10', 

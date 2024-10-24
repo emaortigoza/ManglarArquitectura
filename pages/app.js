@@ -67,21 +67,21 @@ let trabajos = [
     categoria: 'proyecto', 
     name:'Stand Miller s.a.', 
     foto:'../img/imgArquitectura/Stand Miller s.a/EPIBA_Top.jpg', 
-    direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'
+    direccion: './arqDetail/standMiller.html'
     },
     {
     id:'11',
     categoria: 'concurso', 
     name:'Complejo de encuentros académicos de Fundación José A. Balseiro en S.C', 
     foto:'../img/imgArquitectura/CONCURSO Complejo de encuentros académicos de Fundación José A. Balseiro en S.C/PORTADA_Balseiro.jpg', 
-    direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'
+    direccion: './arqDetail/balseiro.html'
     },
     {
     id:'12', 
     categoria: 'concurso', 
     name:'Llamador', 
     foto:'../img/imgArquitectura/CONCURSO «Llamador»/Logrono-Espana-Llamador-GAL.jpg', 
-    direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'
+    direccion: './arqDetail/llamador.html'
     },
     {
     id:'13', 

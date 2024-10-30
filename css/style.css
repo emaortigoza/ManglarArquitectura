@@ -211,6 +211,7 @@ body{
 
 .arqDetail__img{
     max-width: 1200px;
+    max-height: 100%;
     margin: auto;
 }
 .arqDetail__img img{
@@ -218,7 +219,6 @@ body{
     margin-bottom: 20px;
     max-width: 100%;
     width: 100vw;
-    max-height: 100%;
 }
 .arqDetail__data-container{
     display: flex;
@@ -232,7 +232,7 @@ body{
 }
 .arqDetail__data{
     max-width: 550px;
-    width: 500px;
+    width: 100%;
     
 }
 .data__description h2{
@@ -244,7 +244,7 @@ body{
 }
 .data__description h4{
     font-size: 16px;
-    margin-top: 20px;
+    margin: 12px 0 5px 0;
 }
 .data__description p{
     font-size: 14px;
@@ -258,30 +258,31 @@ body{
 }
 .data__info{
     list-style: none;
-    padding: 5px;
     border-bottom: 1px solid #bbbbbb;
+    padding: 5px 0;
 }
-.data__info summary{
+.data__info details summary{
     font-size: 16px;
     font-weight: 300;
-    color: var(--grey);
     list-style: none;
-    
+    color: var(--grey);
 }
 summary::before{
     
     content: "+";
 }
-.data__info details li{
+.data__info  ul li{
     list-style: none;
     text-align: start;
     text-align: justify;
-    padding: 6px;
+    padding: 2px;
     font-size: 14px;
+    color: var(--greyLight);
 }
 .data__info details h6{
     margin-left: 6px;
-    font-size: 15px;
+    font-size: 14px;
+    margin: 6px 0;
 }
 .data__info .info-detail h4{
     font-size: 16px;
@@ -392,6 +393,11 @@ summary::before{
         padding: 0;
         flex-direction: row ;
         justify-content: space-between;
+        
+    }
+
+    .arqDetail__data{
+        width: 500px;
         
     }
 

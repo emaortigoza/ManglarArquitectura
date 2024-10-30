@@ -56,13 +56,6 @@ let trabajos = [
     direccion: './arqDetail/pavon.html'
     },
     {
-    id:'9', 
-    categoria: 'consurso', 
-    name:'Zig Zag', 
-    foto:'../img/imgArquitectura/CONCURSO «ZIG ZAG»/ZIGZAG_Top.jpg', 
-    direccion: './arqDetail/zigZag.html'
-    },
-    {
     id:'10', 
     categoria: 'proyecto', 
     name:'Stand Miller s.a.', 
@@ -77,52 +70,39 @@ let trabajos = [
     direccion: './arqDetail/balseiro.html'
     },
     {
-    id:'12', 
-    categoria: 'concurso', 
-    name:'Llamador', 
-    foto:'../img/imgArquitectura/CONCURSO «Llamador»/Logrono-Espana-Llamador-GAL.jpg', 
-    direccion: './arqDetail/llamador.html'
-    },
-    {
-    id:'13', 
-    categoria: 'concurso', 
-    name:'Camara Cereales', 
-    foto:'../img/imgArquitectura/CONCURSO «Camara Cereales»/Cereales-PORTADA.jpg', 
-    direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'
-    },
-    {
     id:'14', 
     categoria: 'concurso', 
     name:'AHRCC', 
-    foto:'../img/imgArquitectura/CONCURSO AHRCC/AHRCC_Top.jpg', 
-    direccion: '/ManglarArquitectura/pages/arquitecturaDetail.html'
+    foto:'../img/imgArquitectura/CONCURSO AHRCC/PORTADA .png', 
+    direccion: './arqDetail/ahrcc.html'
     },
     {
     id:'15', 
     categoria: 'concurso', 
     name:'Ministerio de Desarrollo Humano y Articulación Solidaria', 
     foto:'../img/imgArquitectura/Concurso Ministerio Desarrollo Humano/VIEDMA_Top.jpg', 
-    direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'
+    direccion: './arqDetail/ministerio.html'
     },
     {
     id:'16', 
     categoria: 'concurso', 
     name:'Casa Cañon', 
-    foto:'../img/imgArquitectura/CONCURSO «Casa Cañon»/PORTADACASACANON.jpg'
+    foto:'../img/imgArquitectura/CONCURSO «Casa Cañon»/PORTADACASACANON.jpg',
+    direccion: './arqDetail/casaCañon.html'
     },
     {
     id:'17', 
     categoria: 'concurso', 
     name:'Complejo Judicial Zapala', 
     foto:'../img/imgArquitectura/Concurso – Complejo Judicial Zapala/Portada-Zapala.jpg', 
-    direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'
+    direccion: './arqDetail/complejoJudicial.html'
     },
     {
     id:'18',
     categoria: 'concurso', 
     name:'AHRCC-2', 
     foto:'../img/imgArquitectura/CONCURSO AHRCC-2/SALADILLO_PORTADA.jpg', 
-    direccion: '../ManglarArquitectura/pages/arquitecturaDetail.html'
+    direccion: './arqDetail/ahrcc-2.html'
     },
   
 ]

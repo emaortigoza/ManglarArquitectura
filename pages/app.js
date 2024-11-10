@@ -122,7 +122,7 @@ const displayProducts = (trabajosToShow) =>{
                     <div class="nameHover">
                         <h3>${trabajo.name}</h3>
                     </div>
-                    </a>
+                </a>
                     
             
         `

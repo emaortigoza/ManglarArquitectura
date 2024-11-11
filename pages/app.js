@@ -72,7 +72,7 @@ let trabajos = [
     {
     id:'14', 
     categoria: 'concurso', 
-    name:'AHRCC', 
+    name:'Sede Institucional AHRCC', 
     foto:'../img/imgArquitectura/CONCURSO AHRCC/PORTADA .png', 
     direccion: './arqDetail/ahrcc.html'
     },

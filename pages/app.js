@@ -100,7 +100,7 @@ let trabajos = [
     {
     id:'18',
     categoria: 'concurso', 
-    name:'AHRCC-2', 
+    name:'Delegación Saladillo', 
     foto:'../img/imgArquitectura/CONCURSO AHRCC-2/SALADILLO_PORTADA.jpg', 
     direccion: './arqDetail/ahrcc-2.html'
     },

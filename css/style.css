@@ -717,6 +717,21 @@ summary::before{
     color: var(--greyLight);
 }
 
+.grupo-2{
+    padding: 15px 10px;
+    color: rgb(34, 29, 29);
+    padding: 20px;
+    text-align: center;
+}
+.grupo-2 small{
+    font-size: 12px;
+    text-align: center;
+}
+.grupo-2 small a{
+    text-decoration: none;
+    color: #333333;
+}
+
 /*---------- footer media queries*/
 
 @container footer (min-width:600px){

@@ -326,6 +326,7 @@ summary::before{
 .arqDetail__galery-render{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     max-width: 1200px;
     margin: auto;
     margin-top: 10px;

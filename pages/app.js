@@ -104,6 +104,13 @@ let trabajos = [
     foto:'../img/imgArquitectura/CONCURSO «Casa Cañon»/PORTADACASACANON.jpg',
     direccion: './arqDetail/casaCañon.html'
     },
+    {
+    id:'16', 
+    categoria: 'proyecto',
+    name:'Cordoba Odontologia',
+    foto:'../img/imgArquitectura/Cordoba Odontologia/portada.jpg',
+    direccion: './arqDetail/cordobaOdontologia.html'
+    },
   
 ]
 

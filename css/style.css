@@ -25,10 +25,7 @@ body{
 }
 
 /* ---------------Header section */
-.header{
-    margin-top: 20px;
-    
-}
+
 .header__nav{
     margin: auto;
     display: flex;
@@ -40,7 +37,7 @@ body{
 .header__logo{
     max-width: 100%;
     margin: auto;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     text-align: center;
 }
 .header__logo img{
@@ -77,11 +74,11 @@ body{
 
 /*--------------- Container-hero---*/
 .container__heroIndex{
-    margin-top: 10px ;
+    margin-top: 5px ;
     max-width: 100%;
 }
 .container__hero{
-    margin-top: 10px ;
+    margin-top: 5px ;
     max-width: 100%;
     width: 1100px;
     margin: auto;
@@ -95,7 +92,7 @@ body{
     width: 100vw;
     max-height: 100%;
     height: auto;
-    margin-top: 20px;
+    margin-top: 10px;
     
 }
 

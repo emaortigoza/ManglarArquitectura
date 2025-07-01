@@ -111,6 +111,13 @@ let trabajos = [
     foto:'../img/imgArquitectura/Cordoba Odontologia/portada.jpg',
     direccion: './arqDetail/cordobaOdontologia.html'
     },
+    {
+    id:'17',
+    categoria: 'proyecto',
+    name: 'Parroquia San Francisco de Paula',
+    foto: '../img/imgArquitectura/ParroquiaSanFranciscoPaula/Esquina 1.png',
+    direccion: './arqDetail/sanFrancisco.html'
+    }
   
 ]
 

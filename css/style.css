@@ -294,6 +294,10 @@ summary::before{
     color: var(--greyLight);
     margin-left: 20px;
 }
+.data__info .info-detail .data__info-detail2{
+    margin-left: 40px;
+}
+
 .data__info .info-detail .data__info-detail3{
     margin-left: 60px;
 }

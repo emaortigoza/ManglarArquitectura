@@ -1,38 +1,38 @@
 let trabajos = [
     {
-    id:'1',
-    categoria: 'proyecto',
-    name: 'Sala Capitular Sion del Padre',
-    foto: '../img/imgArquitectura/Sala Capitular/Portada Copia de Acceso 3.png',
-    direccion: './arqDetail/salacapitularSion.html'
-    },
-    {
-    id:'2',
-    categoria: 'proyecto',
-    name:'Stand Miller Building International',
-    foto:'../img/imgArquitectura/SomosIndustria/Portada.jpg',
-    direccion: './arqDetail/millerSomosIndustria.html'
-    },
-    {
-    id:'3', 
-    categoria: 'proyecto',
-    name:'Aires Odontologia',
-    foto:'../img/imgArquitectura/Aires Odontologia/00 2 Portada.jpg',
-    direccion: './arqDetail/airesOdontologia.html'
-    },
-     {
-    id:'4', 
+    id:'1', 
     categoria: 'proyecto',
     name:'Cordoba Odontologia',
     foto:'../img/imgArquitectura/Cordoba Odontologia/portada.jpg',
     direccion: './arqDetail/cordobaOdontologia.html'
     },
     {
-    id:'5',
+    id:'2', 
+    categoria: 'proyecto',
+    name:'Aires Odontologia',
+    foto:'../img/imgArquitectura/Aires Odontologia/00 2 Portada.jpg',
+    direccion: './arqDetail/airesOdontologia.html'
+    },
+    {
+    id:'3',
     categoria: 'proyecto',
     name: 'Parroquia San Francisco de Paula',
     foto: '../img/imgArquitectura/ParroquiaSanFranciscoPaula/Esquina 1.png',
     direccion: './arqDetail/sanFrancisco.html'
+    },
+    {
+    id:'4',
+    categoria: 'proyecto',
+    name:'Stand Miller Building International',
+    foto:'../img/imgArquitectura/SomosIndustria/Portada.jpg',
+    direccion: './arqDetail/millerSomosIndustria.html'
+    },
+    {
+    id:'5',
+    categoria: 'proyecto',
+    name: 'Sala Capitular Sion del Padre',
+    foto: '../img/imgArquitectura/Sala Capitular/Portada Copia de Acceso 3.png',
+    direccion: './arqDetail/salacapitularSion.html'
     },
     {  
     id:'6', 

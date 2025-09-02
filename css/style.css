@@ -397,6 +397,18 @@ summary::before{
     max-width: 1200px;
     width: 100%;
 }
+.arqDetail_video{
+    margin-top: 10px;
+    display: flex;
+  justify-content: center; /* Centrado horizontal */
+  align-items: center;     /* Centrado vertical (si el contenedor tiene altura) */
+  height: 100vh;           /* Opcional: ocupa toda la pantalla */
+  background: #fffcfc;        /* Opcional: fondo negro para resaltar */
+}
+.arqDetail_video .video__render{
+    max-height: 90vh; /* Se ajusta a la pantalla */
+  max-width: 100%;  /* Evita que se deforme */
+}
 
 /*------------ arqDetail mediaqueris*/
 @container arqDetail (min-width:720px){

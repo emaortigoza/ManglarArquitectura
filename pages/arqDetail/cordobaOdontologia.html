@@ -221,6 +221,11 @@
               </video>
             </div>
           </div>
+          <div class="arqDetail_video">
+            <video id="miVideo" src="https://github.com/emaortigoza/ManglarArquitectura/releases/download/v1.0.0/01.2.Consultorio_Av.Cordoba.3949.mp4" autoplay muted loop playsinline class="video__render">
+              Your browser does not support the video tag.
+            </video>
+          </div>
 
           <div class="overlay" id="overlay">
             <img id="zoomed-image" class="zoomed-image">
@@ -297,6 +302,17 @@
           zoomedImage.classList.remove('zoomed');  // Restablecer el zoom
         }
       });
+       const video = document.getElementById('miVideo');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            video.play();  // Reproducir el video cuando es visible
+          } else {
+            video.pause(); // Pausar el video cuando no es visible
+          }
+        });
+      }, { threshold: 0.5 }); // Ajusta el umbral según sea necesario
+      observer.observe(video); // Observar el video
 
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

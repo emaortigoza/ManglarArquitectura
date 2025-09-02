@@ -132,23 +132,23 @@
           <div class="arqDetail__galery-container">
             
             <div class="galery__img">
-              <img src="../../img/imgArquitectura/Aires Odontologia/PB_page-0001.jpg" alt="" class="zoomable">
-            </div>
-            <div class="galery__img"></div>
-            <div class="galery__img">
               <img src="../../img/imgArquitectura/Aires Odontologia/AA_page-0001.jpg" alt="" class="zoomable">
             </div>
             
             <div class="galery__img">
               <img src="../../img/imgArquitectura/Aires Odontologia/BB_page-0001.jpg" alt="" class="zoomable">
             </div>
-
+            
             <div class="galery__img">
               <img src="../../img/imgArquitectura/Aires Odontologia/CC_page-0001.jpg" alt="" class="zoomable">
             </div>
             <div class="galery__img">
               <img src="../../img/imgArquitectura/Aires Odontologia/DD_page-0001.jpg" alt="" class="zoomable">
             </div>
+            <div class="galery__img">
+              <img src="../../img/imgArquitectura/Aires Odontologia/PB_page-0001.jpg" alt="" class="zoomable">
+            </div>
+            <div class="galery__img"></div>
             <div class="galery__img imgvuk">
               <img src="../../img/imgArquitectura/Aires Odontologia/DETALLE_page-0001.jpg" alt="" class="zoomable">
             </div>
@@ -199,6 +199,11 @@
           <div class="galery__render">
             <img src="../../img/imgArquitectura//Aires Odontologia/00 12.jpg" class="zoomable"  alt="" >
           </div>
+        </div>
+         <div class="arqDetail_video">
+          <video id="miVideo" src="https://github.com/emaortigoza/ManglarArquitectura/releases/download/v1.0.0/02.AIRES_Consultorio.odontologico.mp4" autoplay muted loop playsinline class="video__render">
+           
+          </video>
         </div>
         <!-- <div class="arqDetail__galery-render">
           <div class="galery__render">
@@ -288,6 +293,17 @@
         }
       });
 
+      const video = document.getElementById('miVideo');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            video.play();  // Reproducir el video cuando es visible
+          } else {
+            video.pause(); // Pausar el video cuando no es visible
+          }
+        });
+      }, { threshold: 0.5 }); // Ajusta el umbral según sea necesario
+      observer.observe(video); // Observar el video
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/ee1bf82153.js" crossorigin="anonymous"></script>

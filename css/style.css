@@ -404,6 +404,7 @@ summary::before{
 .arqDetail__galery-render .sanPVideo video{
     max-width: 1200px;
     width: 100%;
+    background-color: #fffcfc;
 }
 .arqDetail_video{
     margin-top: 10px;
@@ -414,8 +415,10 @@ summary::before{
   background: #fffcfc;        /* Opcional: fondo negro para resaltar */
 }
 .arqDetail_video .video__render{
+    margin: auto;
     max-height: 90vh; /* Se ajusta a la pantalla */
   max-width: 100%;  /* Evita que se deforme */
+  background-color: #fffcfc;
 }
 
 /*------------ arqDetail mediaqueris*/

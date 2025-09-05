@@ -294,6 +294,9 @@ summary::before{
     color: var(--greyLight);
     margin-left: 20px;
 }
+.data__info .info-detail h4 .espacio{
+    margin: 0px;
+}
 .data__info .info-detail .data__info-detail2{
     margin-left: 40px;
 }
@@ -337,6 +340,11 @@ summary::before{
     width: 100%;
     gap: 12px;
     min-height: 50vh;
+}
+.arqDetail__galery-render .espacioEnBlanco{
+    height: 550px;
+    width: 525px;
+    background-color: #ffffff;
 }
 
 .arqDetail__galery-container .galery__img{
